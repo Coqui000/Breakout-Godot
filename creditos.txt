@@ -1,0 +1,6 @@
+Este pack contém os assets utilizados no curso "Breakout na Godot 4", do canal Desenvolvendo Jogos.
+
+Todos os sprites e efeitos sonoros foram feitos por mim, e você pode utilizá-los da maneira quiser :)
+(usei o "Bfxr" para a criação dos sons)
+
+Bons estudos!

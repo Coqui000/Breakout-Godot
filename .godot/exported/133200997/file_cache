@@ -1,0 +1,6 @@
+res://Cenas/Bloco/bloco.tscn::e16b89fdbb27c1ec3bfee675914e9ea9::1726806790::res://.godot/exported/133200997/export-36cbfe69852f871de903d672c838423a-bloco.scn
+res://Cenas/bola/bola.tscn::6a89ec3becb9baf1c7e9d76e85a0d56a::1726806790::res://.godot/exported/133200997/export-2840e8f5afec62f5208dccb82459befa-bola.scn
+res://Cenas/Fases/Fase_01/fase_01.tscn::cbc67ebe02079fdcf95277b12df9e8b8::1726806831::res://.godot/exported/133200997/export-0c7325691dc21b979b62eadd8e77a709-fase_01.scn
+res://Cenas/Fases/Fase_02/fase_02.tscn::7e1dcb259bf43456c75d7645ad80064a::1726806789::res://.godot/exported/133200997/export-9b357d1601c07f0e7a1b30965532163e-fase_02.scn
+res://Cenas/GameManager/game_manager.tscn::53649cb5d8cb3509f714d3c038f6687f::1726806790::res://.godot/exported/133200997/export-2bd3d2344faf99c4ef11219b3769a651-game_manager.scn
+res://Cenas/Paddl/static_body_2d.tscn::46b7e072b16783dcbe57cba0a60a8023::1726806790::res://.godot/exported/133200997/export-12f05918ee6ed56ced451e133139548f-static_body_2d.scn

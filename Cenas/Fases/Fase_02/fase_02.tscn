@@ -1,0 +1,107 @@
+[gd_scene load_steps=6 format=3 uid="uid://f52jkgrmfjt8"]
+
+[ext_resource type="Texture2D" uid="uid://dohfu3272h6ss" path="res://assets/sprites/campo-roxo.png" id="1_q3nnw"]
+[ext_resource type="PackedScene" uid="uid://dgciyohrnvs7a" path="res://Cenas/Paddl/static_body_2d.tscn" id="2_uuhh0"]
+[ext_resource type="PackedScene" uid="uid://de0xt0y7ykdfs" path="res://Cenas/bola/bola.tscn" id="3_pupx3"]
+[ext_resource type="PackedScene" uid="uid://bphplia5j7vxx" path="res://Cenas/Bloco/bloco.tscn" id="4_7qj3c"]
+[ext_resource type="PackedScene" uid="uid://5vynwx5beipe" path="res://Cenas/GameManager/game_manager.tscn" id="5_woibb"]
+
+[node name="Fase02" type="Node2D"]
+
+[node name="ImagemDeFundo" type="Sprite2D" parent="."]
+position = Vector2(400, 300)
+texture = ExtResource("1_q3nnw")
+
+[node name="Paddle" parent="." instance=ExtResource("2_uuhh0")]
+position = Vector2(400, 550)
+
+[node name="Bola" parent="." instance=ExtResource("3_pupx3")]
+position = Vector2(400, 500)
+
+[node name="Blocos" type="Node2D" parent="."]
+
+[node name="Bloco" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(95, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco2" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(212, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco3" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(332, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco4" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(212, 28)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco5" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(212, 164)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco6" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(591, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco10" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(591, 154)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco11" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(410, 250)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco14" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(626, 387)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco15" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(212, 397)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco16" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(410, 360)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco17" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(410, 174)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco12" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(258, 298)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco13" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(554, 298)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco9" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(697, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco8" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(484, 95)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="Bloco7" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_7qj3c")]
+position = Vector2(591, 28)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 3
+
+[node name="GameManager" parent="." node_paths=PackedStringArray("blocos") instance=ExtResource("5_woibb")]
+blocos = NodePath("../Blocos")
+proxima_fase = "res://Cenas/Fases/Fase_01/fase_01.tscn"

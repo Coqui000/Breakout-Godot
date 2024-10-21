@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnskqhjp6vl4x"]
+
+[ext_resource type="Texture2D" uid="uid://dohfu3272h6ss" path="res://assets/sprites/campo-roxo.png" id="1_4fvsd"]
+[ext_resource type="PackedScene" uid="uid://dgciyohrnvs7a" path="res://Cenas/Paddl/static_body_2d.tscn" id="2_cx0md"]
+[ext_resource type="PackedScene" uid="uid://de0xt0y7ykdfs" path="res://Cenas/bola/bola.tscn" id="3_5f1yq"]
+[ext_resource type="PackedScene" uid="uid://bphplia5j7vxx" path="res://Cenas/Bloco/bloco.tscn" id="4_viiw2"]
+[ext_resource type="PackedScene" uid="uid://5vynwx5beipe" path="res://Cenas/GameManager/game_manager.tscn" id="5_rm7qb"]
+
+[node name="Fase01" type="Node2D"]
+
+[node name="ImagemDeFundo" type="Sprite2D" parent="."]
+position = Vector2(400, 300)
+texture = ExtResource("1_4fvsd")
+
+[node name="Paddle" parent="." instance=ExtResource("2_cx0md")]
+position = Vector2(400, 550)
+
+[node name="Bola" parent="." instance=ExtResource("3_5f1yq")]
+position = Vector2(400, 500)
+
+[node name="Blocos" type="Node2D" parent="."]
+
+[node name="Bloco" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(65, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco2" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(154, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco3" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(249, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco4" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(336, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco5" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(428, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco6" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(522, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco7" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(619, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco8" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(725, 63)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco9" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(65, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco10" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(154, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco11" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(249, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco12" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(336, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco13" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(428, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco14" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(522, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco15" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(619, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco16" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(725, 109)
+game_manager = NodePath("../../GameManager")
+vida_do_bloco = 1
+
+[node name="Bloco17" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(65, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco18" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(154, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco19" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(249, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco20" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(336, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco21" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(428, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco22" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(522, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco23" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(619, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="Bloco24" parent="Blocos" node_paths=PackedStringArray("game_manager") instance=ExtResource("4_viiw2")]
+position = Vector2(725, 153)
+game_manager = NodePath("../../GameManager")
+
+[node name="GameManager" parent="." node_paths=PackedStringArray("blocos") instance=ExtResource("5_rm7qb")]
+blocos = NodePath("../Blocos")
+proxima_fase = "res://Cenas/Fases/Fase_02/fase_02.tscn"
